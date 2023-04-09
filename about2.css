@@ -1,0 +1,780 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+    }
+body
+{
+    display: block;
+    min-height: 100vh;
+    background:#000;
+}
+
+section
+{
+    padding: 4rem 0 3rem;
+}
+
+/* input{
+    width: 100%;
+    outline: none;
+} */
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+/*header*/
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background:#000000;
+   box-shadow: 0 5px 15px rgba(0,0, 0,0.06);
+}
+.logo img
+{
+    max-width: 200px;
+    height: auto;
+
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#navbar li
+{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+#navbar li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: all .42s ease;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#navbar li a:hover
+{
+background:#fa3e6a ;
+color:#000000;
+}
+
+.nav-icon
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i
+{
+    margin-right: 20px;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover
+{
+    transform: scale(1.5);
+    color: #fa3e6a;
+}
+
+/* main home elements */
+
+section{
+    padding: 5% 10%;
+}
+
+.main-home
+{
+    width: 80%;
+    height: 70vh;
+    background-image: url(imagini/background2.png);
+    background-position: center;
+    background-size:cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+
+.main-text h1
+{   
+    color: #fa3e6a;
+    display: block;
+    font-size: 6em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight:900;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255); 
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main-text p
+{
+    color: #ffffff;
+    font-size:25px;
+    font-style: italic;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 2px #000000;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+
+    
+}
+.main-text p span
+{
+    color: #f77d99;
+    font-size:35px;
+    font-style: italic;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 2px #000000;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+
+    
+}
+
+/* buton reduceri */
+
+.main-btn
+{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #fa3e6a;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.main-btn:hover
+{
+    background-color: #fa3e6a;
+    color: #000;
+}
+
+.main-btn
+{
+    vertical-align: middle;
+} 
+
+/* nav menu-icon  btn ========================*/
+.navigation .menu-icon
+{
+    cursor: pointer;
+    float: right;
+    padding: 20px 10px;
+    z-index: 103;
+}
+.navigation .menu-icon .n-icon
+{
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    transition: background 0.2s ease-out; 
+}
+
+.navigation .menu-icon .n-icon::before,
+.navigation .menu-icon .n-icon::after
+{
+    background-color: #ffffff;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+
+}
+
+.navigation .menu-icon .n-icon::before
+{
+    top:8px
+}
+
+.navigation .menu-icon .n-icon::after
+{
+    top: -8px;
+}
+
+.navigation .menu-btn:checked~ .menu-icon .n-icon
+{
+    background-color: transparent;
+}
+
+.navigation .menu-btn:checked~ .menu-icon .n-icon::before
+{
+    transform: rotate(-45deg);
+    top: 0px;
+}
+
+.navigation .menu-btn:checked~ .menu-icon .n-icon::after
+{
+    transform: rotate(45deg);
+    top:0px;
+}
+
+.menu-btn
+{
+    display: none;
+
+}
+
+
+
+/* SECTION */
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 9px 0;
+}
+
+/* DESPRE SITE */
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(imagini/bestphoto2.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    
+}
+
+
+
+#sm-banner .banner-box2{
+    
+    background-image: url(imagini/comunitate.jpg);
+
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke: 0.7px #a74e63;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+
+
+button.white{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 11px 18px;
+    color: #ffffff;
+    background-color:transparent;
+    cursor: pointer;
+    border:1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#sm-banner .banner-box:hover button{
+    background: #fa3e6a;
+    border: 1px solid #fff;
+
+}
+
+/* 3Banners */
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagini/cardPPAY.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+    margin-bottom: 20px;
+    
+}
+
+#banner3 h2{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+
+}
+
+#banner3 h3{
+    color:#ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+#banner3 .banner-box .bx{
+font-size: 30px;
+color: #fff;
+background: #fa3e6a;
+padding: 10px;
+border-radius: 5rem;
+align-self: center;
+
+} 
+
+#banner3 .banner-box2 {
+    background-image: url(imagini/pic9.jpg);
+}
+
+#banner3 .banner-box3 {
+    background-image: url(imagini/pic11.jpg);
+}
+
+#fin h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+#fin p{
+    color: #fff;
+    font-size: 20px;
+}
+
+#fin i{
+    font-size: 30px;
+}
+
+
+
+/* NEWSLETTER */
+
+
+.newstext h4{
+    font-family: 'Orbitron', sans-serif
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(imagini/unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #E84672;
+    
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 9px 0;
+}
+
+#newsletter h4{
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #f4c4e0;
+}
+
+#newsletter p span{
+    color: #1da5ff;
+    font-weight: 600;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius:4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+
+    appearance: none;
+	border: none;
+	font-size: inherit;
+	white-space: nowrap;
+	
+	border-radius: 0.3em;
+	padding: 0.75em 1em;
+	
+	background: #fa3e6a;
+	color: rgb(255, 255, 255);
+	
+	display: inline-flex;
+	align-items: center;
+	
+	cursor:pointer;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 30%;
+}
+
+
+/* copyright */
+.copyright{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.copyright p{
+    font-size: 1.3rem;
+    color:#ffffff;
+
+}
+
+/* copyright  end */
+
+/* FOOTER */
+.footer-top{
+    display: grid;
+    gap: 60px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
+    
+}
+
+
+.footer .logo img{width: 180px;}
+
+.footer-brand .footer-text{margin-block: 35px 30px;}
+
+.footer-text{
+    color: #fff;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.social-link{
+    font-size: 20px;
+    color: #fff;
+    background: #000000;
+    padding: 10px;
+    border-radius: 10rem;
+    transition: 250ms ease;
+}
+
+.social-link:is(:hover,:focus-visible){
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.footer-list-title{
+    color: #E84672;
+    font-size: 20px;
+    font-weight: 400;
+    margin-block-end: 25px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.footer-list a{
+    color: #fbfdff;
+    font-weight: 200;
+}
+
+.footer-list button{
+    appearance: none;
+	border: none;
+	font-size: inherit;
+	white-space: nowrap;
+	
+	border-radius: 0.3em;
+	padding: 0.75em 1em;
+	
+	background: #fa3e6a;
+	color: rgb(255, 255, 255);
+	
+	display: inline-flex;
+	align-items: center;
+	
+	cursor:pointer;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.footer-list .form{
+    
+    display: flex;
+    width: 70%;
+    padding-left: 30px;
+	
+}
+
+.footer-list input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius:4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footer-link{margin-block-start: 10px;}
+
+.footer-link:is(:hover,:focus-visible){text-decoration: underline;}
+
+.footer-list .footer-text {margin-block-end: 15px;}
+
+.input-field{
+    height: 55px;
+    padding-inline: 25px 60px;
+    border: 1px solid hsl(0,1%,85%);
+    color: #ffeff3;
+}
+
+.input-wrapper{position: relative;}
+
+.input-field:focus{border-color: #fa3e6a;}
+
+.input-btn{
+    width: 45px;
+    height: 45px;
+    background-color: #fa3e6a;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    transition: 250ms ease;
+    color: #ffffff;
+}
+
+/* .input-btn i{
+    transform: translateX(-2x) rotate(45deg);
+} */
+
+.copyright{
+    padding-block: 30px;
+    border-block-start: 1px solid  hsl(0,1%,85%) ;
+}
+
+.copyright{margin-block-end:20px ;}
+
+
+.footer-bottom-link:is(:hover,:focus-visible){
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+  }
+
+
+/* FOOTER END */
+
+/* Divider */
+hr.solid {
+    border-top: 0.01px solid #000000;
+  }
+
+
+
+  
+/* MENIU DROPDOWN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #fa3e6a3c}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+
+  #navbar .dropdown .dropbtn{
+  
+    text-decoration: none;
+    padding: 6px 25px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: all .42s ease;
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+
+
+  }
+
+#navbar .dropdown .dropbtn:hover{
+    background:#fa3e6a ;
+    color:#000000;}
+
+
+  /* MEDIA */
+
+  
+@media(max-width:890px){
+    header{
+        padding: 20vw 3%;
+        transition: 0.4s;
+    }
+}
+ 
+    
+@media (max-width: 575px) {
+
+    header{
+        padding: 20vw 3%;
+        transition: 0.4s;
+    }
+
+    body{
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .main-text h1{
+        font-size: 20px;
+        transition: 0.4s;
+    }
+
+    .main-text p{
+        font-size: 18px;
+        transition: 0.4s;
+    }
+
+    .main-btn{
+        padding: 10px 20px;
+        transition: 0.4s;
+    }
+
+    .main-home{
+        
+       width: 150%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+
+    .footer-top{grid-template-columns: 1fr 1fr;}
+
+    .footer-bottom-list{
+        display: flex;
+        gap:30px;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .copyright{ margin-block-end: 0;}
+
+   
+        section{
+            width: 150%;
+        }
+
+    #sm-banner .banner-box{
+        min-width:580px;
+        height: 30vh;
+       
+        padding: 30px;
+    }
+
+  
+    
+}
