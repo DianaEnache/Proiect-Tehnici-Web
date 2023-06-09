@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Play</title>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="index2.css" />
+
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="imagini/shortcut1.png" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <a href="#" class="logo"><img src="logo4.png" alt="" /></a>
+
+      <section id="navbar">
+        <div class="dropdown">
+          <a href="index2.html" class="dropbtn">MENU</a>
+          <div class="dropdown-content">
+            <a href="#">NEWS</a>
+            <a href="#">WISHLIST</a>
+            <a href="#">YOUR STORE</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="shop2.html" class="dropbtn">SHOP</a>
+          <div class="dropdown-content">
+            <a href="#">POINTS SHOP</a>
+            <a href="#">WISHLIST</a>
+            <a href="#">STATS</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="about2.html" class="dropbtn">ABOUT</a>
+          <div class="dropdown-content">
+            <a href="#">FEATURES</a>
+            <a href="#">UPDATES</a>
+            <a href="#">EXPLORE</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#" class="dropbtn">CONTACT</a>
+          <div class="dropdown-content">
+            <a href="#">COMMUNITY</a>
+            <a href="#">PROFILE</a>
+            <a href="#">USER</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="nav-icon">
+        <a href=""><i class="bx bx-heart"></i></a>
+        <a href=""><i class="bx bx-shopping-bag"></i></a>
+        <a href=""><i class="bx bx-user-circle"></i></a>
+        <!-- NAVIGATION==================================== -->
+        <nav class="navigation">
+          <!-- menu-btn===================================== -->
+          <input type="checkbox" class="menu-btn" id="menu-btn" />
+          <label for="menu-btn" class="menu-icon">
+            <span class="n-icon"></span>
+          </label>
+        </nav>
+      </div>
+    </header>
+    <!-- main home------------------------------------------- -->
+    
+      <!-- video  -->
+    <section class = "video-container container">
+        <video  loop src="video/Red Dead Redemption 2 Trailer.mp4" muted autoplay ></video>
+
+        
+    </section>
+      <!-- video end -->
+
+      <!-- despre joc -->
+    <section class = "about container">
+      <h2 onmouseover="style.color='red'" onmouseout="style.color='white'">ABOUT</h2>
+      <p>America, 1899. The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed.
+
+        After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised
+        him.
+        
+        From the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in
+        America at the dawn of the modern age. Coming October 26, 2018 to PlayStation 4 and Xbox One systems.</p>
+
+        <button id="example-button">FAVORITE</button>
+        <button id="reset-button">UNDO</button>   
+    </section>
+
+    <!-- despre joc end -->
+
+
+     <!-- imagini end -->
+
+    <section class="screenshots container">
+      <h2  onmouseover="style.color='red'" onmouseout="style.color='white'">SCREENSHOTS</h2>
+      <div class="screenshots-content">
+        <img src="imagini/RDR_IMG.jpg" alt="">
+        <img src="imagini/RDR_IMG2.jpg" alt="">
+        <img src="imagini/RDR3.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- imagini end -->
+
+    <!-- link uri download -->
+    <section class = "download">
+          <h2>DOWNLOAD LINKS</h2>
+          <div class="download-links">
+            <button id ="B1" onclick="setTimeout(myFunction, 3000)">DOWNLOAD PC</button>
+            <button id ="B2" onclick="setTimeout(myFunction2, 3000)">DOWNLOAD XBOX</button>
+            <button id ="B3" onclick="setTimeout(myFunction3, 3000)">DOWNLOAD FOR PS</button>
+
+          </div>
+
+          <div class="img-down">
+            <img id="myImage" onclick="changeImage()" src="imagini/vaca.png" width="200" height="180">
+          </div>
+
+    </section>
+
+    <!-- end link uri download -->
+
+    <script src="main.js"></script>
+
+   
+  </body>
+</html>
